@@ -1,0 +1,10 @@
+variables:
+  DEPLOY_NAME: default
+  DEPLOY_NAMESPACE: default
+  USE_GITOPS: 1
+
+include:
+  - project: serit/gitlab-ci
+    ref: main
+    file: DotnetDeployment.gitlab-ci.yml
+
